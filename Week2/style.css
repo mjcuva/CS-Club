@@ -1,4 +1,4 @@
-.content {
+#content {
 	background-color: rgba(255, 255, 255, .7);
 	width: 800px;
 	height: inherit;
@@ -13,10 +13,12 @@
 
 body{
 	background-image: url('navy_blue.png');
+	background-attachment: fixed;
 }
 
 #title {
 	text-align: center;
+	margin-bottom: 7px; 
 }
 
 #pictureleft{
@@ -25,4 +27,40 @@ body{
 
 #picturerow img {
 	float: right;
+}
+
+#content div{
+	padding: 3px;
+}
+
+.link {
+	
+
+	
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	background-color: #7f7f7f;
+	width: 200px;
+
+	border-radius: 10px;
+	font-size: 18px;
+	color: black;
+	border: 1px solid black;
+}
+
+.link:hover {
+	background-color: #666666;
+}
+
+.nav {
+	display: block;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#aboutImage {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
 }
