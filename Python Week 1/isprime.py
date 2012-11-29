@@ -19,4 +19,4 @@ if prime == True:
 
 # If we found a number
 else:
-    print str(number) + " ins't prime"
+    print str(number) + " isn't prime"
