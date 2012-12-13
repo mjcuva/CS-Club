@@ -9,11 +9,11 @@ prime = True
 while(i < number and prime == True):
     if(number % i == 0):
         prime = False
-        i += 1
-    else:
-        i += 1
+
+    i += 1
 
 # If we couldn't find a divisible number
+# Don't cast as strings first, demonstrate the error
 if prime == True:
     print str(number) + " is prime"
 
