@@ -1,0 +1,1 @@
+open('output.txt', 'w').write("\n".join([" ".join(line.split()[::-1]) for line in open('input.txt').readlines()]))
