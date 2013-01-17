@@ -3,6 +3,8 @@ import random, webbrowser, os
 pokemonList = []
 numbers = []
 
+directory = os.getcwd()
+
 num = raw_input("Enter the number of Pokemon: ")
 
 #Creates the random pokemon numbers
@@ -20,4 +22,4 @@ for pokemon in pokemonFile:
 #Prints the pokemon for the generated numbers
 for k in numbers:
 	print pokemonList[k] + " " + str(k + 1)
-	os.startfile('./Pictures/' + str(k + 1) + '.png')
+	os.startfile(os.path.join(directory, 'Pictures/' + str(k + 1) + '.png'))
