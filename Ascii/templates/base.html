@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Ascii</title>
+</head>
+<body>
+
+    <div style='text-align:center;'>
+        <div id="title"><h1>Ascii!</h1></div>
+        <form method='post'>
+            <label for='title'>Title: </label><input type='text' value='{{title}}' name='title' style='margin:10px auto;'>
+            <textarea name='art' rows='10' cols='100' style='display:block; text-align:center; margin:10 auto;'>{{art}}</textarea>
+            <button style='display:block; margin:10px auto;'>Submit</button>
+        </form>
+        {%if error%}
+        <div style='background-color:red; margin: 10px auto; padding:10px; width: 300px; color:white;'>{{error}}</div>
+        {% endif %}
+    </div>
+
+    <div id='content' style='margin:0 auto; text-align:center;'>
+        {%for i in createdArt %}
+        <div id='art'>
+            <h2>{{i.title}} - Posted: {{i.posted.strftime('%d-%m-%Y')}}</h2>
+            <pre>{{i.art}}</pre>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
