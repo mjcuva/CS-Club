@@ -19,3 +19,7 @@ default files with the name of the application.
 
 I created a file with some helper functions that makes things easier.  It is the file called main_starter.py.  You can replace
 main.py with this file, just rename it main.py.
+
+# Download
+
+If you just want to download the ascii folder, without downloading everything, use [this dropbox link.](https://www.dropbox.com/sh/tkmdpenn2c4onq5/tZjBJMra6X)
