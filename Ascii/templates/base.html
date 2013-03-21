@@ -6,6 +6,10 @@
 
     <div style='text-align:center;'>
         <div id="title"><h1>Ascii!</h1></div>
+
+        {% if user %}
+        <h3>Hello, {{user.username}}</h3>
+        <a href='/logout'>Logout</a>
         <form method='post'>
             <label for='title'>Title: </label><input type='text' value='{{title}}' name='title' style='margin:10px auto;'>
             <textarea name='art' rows='10' cols='100' style='display:block; text-align:center; margin:10 auto;'>{{art}}</textarea>
@@ -13,6 +17,10 @@
         </form>
         {%if error%}
         <div style='background-color:red; margin: 10px auto; padding:10px; width: 300px; color:white;'>{{error}}</div>
+        {% endif %}
+
+        {%else%}
+        <div><a href='/login'>Login</a> or <a href='/register'>Register</a> to post!</div>
         {% endif %}
     </div>
 

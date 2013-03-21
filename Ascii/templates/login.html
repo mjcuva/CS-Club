@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+    <form method='post'>
+        <table style='margin:100 auto; border:2px dashed black; padding: 10px;'>
+            <tr>
+                <td>Username:</td>
+                <td><input type='text' name='username' value='{{username}}'><br></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type='password' name='password'><br></td>
+            </tr>
+            <tr>
+                <td><button type='submit'>Submit</button></td>
+            </tr>
+        </table>
+    </form>
+
+    {% if error %}<div style='background-color:red; color:white; text-align:center; width: 400px; padding: 10px; margin:0 auto;'>{{error}}</div>{% endif %}
+
+</body>
+</html>
